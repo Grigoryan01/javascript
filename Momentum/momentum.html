@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="assets/favicon.ico" rel="shortcut icon" />
+        <link href="css/owfont-regular.css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/owfont-regular.css" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Momentum</title>
+    </head>
+        <body>
+            <header class="header">
+               
+               <div class="weather">
+                    <input type="text" class="city" id="city" placeholder="Yerevan" onchange="getWeather()"/>
+                    <i class="weather-icon owf"></i>
+                    <div class="weather-error"></div>
+                    <div class="description-container">
+                        <span class="temperature"></span>
+                        <span class="weather-description"></span>
+                    </div>
+                  <div class="wind"></div>
+                  <div class="humidity"></div>
+                </div>
+
+            </header>
+
+              <main class="main">
+                        <time class="time"></time>
+                        <date class="date"></date>
+                            <div class="greeting-container">
+                                    <span class="greeting"></span>
+                                    <input type="text" name="name" class="Name" placeholder="[Enter name]"/>  
+                            </div>
+              </main>
+
+              <footer>
+
+                <div class="focus">
+                    <h3 class="focus-title">What is your main focus for today?</h3>
+                    <input type="text" class="text"/>
+                </div>
+
+              </footer>
+
+                <script src="js/time.js"></script>
+                <script src="js/greeting.js"></script>
+                <script src="js/weather.js"></script>
+        </body>
+    </html>
